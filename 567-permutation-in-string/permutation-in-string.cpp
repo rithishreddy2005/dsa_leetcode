@@ -9,7 +9,7 @@ public:
         }
         for(int right=0;right<s2.size();right++){
             freqS2[s2[right]-'a']++;
-            while (right - left + 1 > s1.size()) {
+            if(right - left + 1 > s1.size()) {
                 freqS2[s2[left]-'a']--;
                 left++;
             }
